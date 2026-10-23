@@ -12,7 +12,7 @@
 |---|---|---|---|---|
 | Kuypheav | `@brain-go-pew` | Coordinator (CEO), Repository & Submission Lead (CIO) | [e.g., intermediate] | Planning, task tracking, communication, keeping deadlines visible |
 | Panha | `@panha-placeholder` | Content Writer | [e.g., beginner in AI] | Clear explanations, structuring learning sequences |
-| Brain | `@brain-placeholder` | Content Writer | [e.g., beginner in AI] | Researching search evolution, query strategies |
+| Bryan | `@nmblu-bolt` | Content Lead | [e.g., intermediete - experience on c++ coding and video editing] | Researching search evolution, query strategies |
 | Pun | `@pun-placeholder` | Content Writer | [e.g., beginner in AI] | Explaining pipelines, business dynamics |
 | Egshiglen | `@egshiglen-placeholder` | Content Writer | [e.g., beginner in AI] | Evaluating quality, identifying failure modes |
 | Shark | `@shark-placeholder` | Content Writer | [e.g., beginner in AI] | User experience, accessibility, risk assessment |
