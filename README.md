@@ -6,14 +6,14 @@
 
 
 ---
-
+s
 ## Team
 
 | Name | GitHub username | Role | Experience | Strengths |
 |---|---|---|---|---|
-| Taing Kuypheav 1820262105 | `@brain-go-pew` | Coordinator (CEO), Repository and submission lead (CIO) | [e.g., intermediate — has led small group projects] | Planning, task tracking, communication, keeping deadlines visible |
+| Thanks Kuypheav 1820262105 | `@brain-go-pew` | Coordinator (CEO), Repository and submission lead (CIO) | [e.g., intermediate — has led small group projects] | Planning, task tracking, communication, keeping deadlines visible |
 | Priya Sharma | `@priyasharma-placeholder` | Content Lead / Lead Writer | [e.g., beginner in AI, comfortable with Markdown] | Clear explanations, structuring learning sequences, editing for beginners |
-| Mateo García | `@mateogarcia-placeholder` | Research & Source Attribution Lead | [e.g., intermediate — experience finding and checking sources] | Source checking, claim verification, reference formatting |
+| Mateo Garcia | `@mateogarcia-placeholder` | Research & Source Attribution Lead | [e.g., intermediate — experience finding and checking sources] | Source checking, claim verification, reference formatting |
 | Fatima Al-Sayed | `@fatimaalsayed-placeholder` | Review & Quality Assurance Lead | [e.g., beginner — careful reader, some proofreading experience] | Proofreading, testing activities, identifying unexplained prerequisites |
 | Noah Williams | `@noahwilliams-placeholder` | Visual & Asset Lead | [e.g., intermediate — basic diagram and layout experience] | Diagrams, tables, annotated images, organizing supporting assets |
 | Yuki Tanaka | `@yukitanaka-placeholder` | GitHub & Repository Coordinator | [e.g., beginner — learning GitHub through this project] | Folder organization, relative paths, commit hygiene, repository coordination |
