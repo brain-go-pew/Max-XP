@@ -14,7 +14,7 @@
 | Panha | `@panha-placeholder` | Content Writer | [e.g., beginner in AI] | Clear explanations, structuring learning sequences |
 | Bryan | `@nmblu-bolt` | Content Lead | [e.g., intermediete - experience on c++ coding and video editing] | Researching search evolution, query strategies |
 | Pun | `@pun-placeholder` | Content Writer | [e.g., beginner in AI] | Explaining pipelines, business dynamics |
-| Egshiglen | `@egshiglen-placeholder` | Content Writer | [e.g., beginner in AI] | Evaluating quality, identifying failure modes |
+| Egshiglen | `@egshiglen-dotcom` | Video Lead & Quality Lead | [e.g., beginner in AI] | Evaluating quality, identifying failure modes |
 | Shark | `@shark-placeholder` | Content Writer | [e.g., beginner in AI] | User experience, accessibility, risk assessment |
 ||
 
