@@ -12,7 +12,7 @@
 | Name | GitHub username | Role | Experience | Strengths |
 |---|---|---|---|---|
 | Taing Kuypheav 1820262105 | `@brain-go-pew` | Coordinator (CEO), Repository and submission lead (CIO) | [e.g., intermediate — has led small group projects] | Planning, task tracking, communication, keeping deadlines visible |
-| Priya Sharma | `@priyasharma-placeholder` | Content Lead / Lead Writer | [e.g., beginner in AI, comfortable with Markdown] | Clear explanations, structuring learning sequences, editing for beginners |
+| Pitadon Udomponganant 1820262128 | `@pitadonuni-source` | Visual Design Lead, Video lead | [e.g., intermediate - some experience with 3d modeling, gfx, autocad and video editing] | Clear explanations, punctual, editing for beginners |
 | Mateo García | `@mateogarcia-placeholder` | Research & Source Attribution Lead | [e.g., intermediate — experience finding and checking sources] | Source checking, claim verification, reference formatting |
 | Fatima Al-Sayed | `@fatimaalsayed-placeholder` | Review & Quality Assurance Lead | [e.g., beginner — careful reader, some proofreading experience] | Proofreading, testing activities, identifying unexplained prerequisites |
 | Noah Williams | `@noahwilliams-placeholder` | Visual & Asset Lead | [e.g., intermediate — basic diagram and layout experience] | Diagrams, tables, annotated images, organizing supporting assets |
