@@ -16,7 +16,7 @@
 | Pun | `@pun-placeholder` | Content Writer | [e.g., beginner in AI] | Explaining pipelines, business dynamics |
 | Egshiglen | `@egshiglen-placeholder` | Content Writer | [e.g., beginner in AI] | Evaluating quality, identifying failure modes |
 | Shark | `@shark-placeholder` | Content Writer | [e.g., beginner in AI] | User experience, accessibility, risk assessment |
-| Egshiglen | `@egshiglen-dotcom` | Video lead and Quality Lead | beginner AI  | [research, information organization] |
+||
 
 > *Note: Please replace the remaining placeholder GitHub usernames, the 7th member, and experience notes with your team's real information.*
 
