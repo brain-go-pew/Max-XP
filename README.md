@@ -15,7 +15,7 @@
 | Brain | `@brain-placeholder` | Content Writer | [e.g., beginner in AI] | Researching search evolution, query strategies |
 | Pun | `@pun-placeholder` | Content Writer | [e.g., beginner in AI] | Explaining pipelines, business dynamics |
 | Egshiglen | `@egshiglen-placeholder` | Content Writer | [e.g., beginner in AI] | Evaluating quality, identifying failure modes |
-| Shark | `@shark-placeholder` | Content Writer | [e.g., beginner in AI] | User experience, accessibility, risk assessment |
+| Shark | `@Rashark2120` | Video lead | [e.g., beginner in AI] |Content research, Canva Design, Presentations. |
 | [7th Member] | `@placeholder` | [Role] | [Experience] | [Strengths] |
 
 > *Note: Please replace the remaining placeholder GitHub usernames, the 7th member, and experience notes with your team's real information.*
