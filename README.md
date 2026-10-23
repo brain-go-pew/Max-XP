@@ -11,7 +11,7 @@
 | Name | GitHub username | Role | Experience | Strengths |
 |---|---|---|---|---|
 | Kuypheav | `@brain-go-pew` | Coordinator (CEO), Repository & Submission Lead (CIO) | [e.g., intermediate] | Planning, task tracking, communication, keeping deadlines visible |
-| Panha | `@panha-placeholder` | Content Writer | [e.g., beginner in AI] | Clear explanations, structuring learning sequences |
+| Long Sopanha 1820262353 | `@longsopanha` | Content lead | [e.g., beginner in AI - experience on content research, Canva Slide & Presentation Layout...] | Clear explanations, structuring learning sequences |
 | Bryan | `@nmblu-bolt` | Content Lead | [e.g., intermediete - experience on c++ coding and video editing] | Researching search evolution, query strategies |
 | Pun | `@pun-placeholder` | Content Writer | [e.g., beginner in AI] | Explaining pipelines, business dynamics |
 | Egshiglen | `@egshiglen-dotcom` | Video Lead & Quality Lead | [e.g., beginner in AI] | Evaluating quality, identifying failure modes |
