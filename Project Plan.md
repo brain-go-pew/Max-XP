@@ -49,5 +49,41 @@ By the end of the module, beginners should be able to:
 
 **Assumed prerequisite knowledge:** basic computer literacy and the ability to read English. No programming experience is required.
 
+---
+
+## 3. How Will We Organize Meetings, Deadlines
+
+### Stage Timeline
+
+| Stage | Final Deadline | Key Team Targets & Internal Checkpoints |
+|---|---|---|
+| 1 | Oct 24, 2026 | • Finalize plan, content outline, task list, GitHub repository, and Markdowns<br>• Complete full team review before submission. |
+| 2 | Nov 7, 2026 | • Nov 3: Complete Markdown for all 12 topics and finish peer review.<br>• Nov 6: Complete first drafts of the Study Guide, test bank, PPT slides, and video tutorials.<br>• Pre-class: Rehearse the live mini-lecture twice. |
+| 3 | Nov 28, 2026 | • Nov 14: Gather user/testing feedback.<br>• Nov 21: Complete all content revisions across resources.<br>• Nov 25: Complete final quality sign-off check.<br>• Nov 27: Final project submission. |
+
+### Meeting Schedule & Communication Channels
+- **Communication Channel:** A dedicated group chat is used for daily updates and quick coordination.
+- **Meeting Cadence:** 
+  - Weekly meetings: One regular weekly group meeting [day and time to be confirmed] to review progress and rebalance tasks.
+  - Stage checkpoints: An extra checkpoint session scheduled right before each major stage deadline to ensure full alignment.
+- **Meeting Logging:** All decisions made and attendance records are logged in the project log after every session.
+
+### Task Management & Tracking
+- **Task Tracking Board:** All tasks' statuses are communicated in Wechat then commmited to the repo.
+- **Internal Deadlines:** Task internal deadlines are intentionally set to at least one week before each major stage deadline to absorb delays and prevent last-minute rushes.
+- **Early Warning System:** Teammates post early warnings in the group chat if any task risks falling behind so workload can be rebalanced promptly.
+- **Struggle & Assistance:** Teammates will ask for help in the group chat if any they are confused about their assigned tasks or other issues.
 
 ---
+
+## 4. Main Risks or Weaknesses & Solutions to Them
+
+| Risk | Response |
+|---|---|
+| Unfamiliar tools (GitHub, video, slides) | Hold a short practice session early, pair members up, and provide templates. |
+| Difficult content (transformers, regulation) | Keep explanations conceptual, use peer review, and ask the teacher. |
+| Uneven workload | Each member owns two topics and one role; review the task board weekly and rebalance. |
+| Delayed tasks | Internal deadlines a week before each stage deadline, and early warnings in the group chat. |
+| Facts differing between resources | Treat the Markdown as the single source and follow the correction process. |
+| Time-sensitive facts going stale (market share, laws, product features) | Date every figure and recheck before Stage 3. |
+| Scope too broad | Agree priorities with the teacher and give low-priority topics brief treatment. |
