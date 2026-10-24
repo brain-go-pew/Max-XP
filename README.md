@@ -2,7 +2,7 @@
 
 **Team:** Max-XP  
 **Selected module:** AI Overview  
-**Repository:** [GitHub repository URL]  
+**Repository:** [https://github.com/brain-go-pew/Max-XP]  
 
 ---
 
@@ -10,13 +10,13 @@
 
 | Name | GitHub username | Role | Experience | Strengths |
 |---|---|---|---|---|
-| Kuypheav | `@brain-go-pew` | Coordinator (CEO), Repository & Submission Lead (CIO) | [e.g., intermediate] | Planning, task tracking, communication, keeping deadlines visible |
-| Panha | `@panha-placeholder` | Content Writer | [e.g., beginner in AI] | Clear explanations, structuring learning sequences |
-| Bryan | `@nmblu-bolt` | Content Lead | [e.g., intermediate - experience on c++ coding and video editing] | Researching search evolution, query strategies |
-| Pun | `@pun-placeholder` | Content Writer | [e.g., beginner in AI] | Explaining pipelines, business dynamics |
-| Egshiglen | `@egshiglen-dotcom` | Video Lead & Quality Lead | [e.g., beginner in AI] | Evaluating quality, identifying failure modes |
-| Shark | `@Rashark2120` | Video Lead | [e.g., beginner in AI] | Content research, Canva Design, Presentations. |
-| Samuel | `@SamuelT8` | Quality Lead |  Beginner in AI | basic project reviewing, identifying errors and paying attention to detail 
+| 1820262105 Kuypheav (陈贵标) | `@brain-go-pew` | Coordinator (CEO), Repository & Submission Lead (CIO) | Tech-savy (enough), regular AI user | Planning, task tracking, communication, keeping deadlines visible |
+| 1820262353 Sopanha (龙志明) | `@panha-placeholder` | Content Writer | beginner in AI usage | Clear explanations, structuring learning sequences |
+| 1820262135 Bryan (柴博) | `@nmblu-bolt` | Content Lead | intermediate - experience on c++ coding and video editing | Researching search evolution, query strategies |
+| 1820262128 Pitadon (吴颙庆) | `@pitadonuni-source` | Content Writer, Visual Design | beginner in AI usage | Explaining pipelines, business dynamics |
+| 1820262359 Egshiglen (英诗论） | `@egshiglen-dotcom` | Video Lead & Quality Lead | beginner in AI usage | Evaluating quality, identifying failure modes |
+| 1820262120 Rashark (杨素昀) | `@Rashark2120` | Video Lead | beginner in AI usage | Content research, Canva Design, Presentations. |
+| 1820262109 Samuel | `@SamuelT8` | Quality Lead |  Beginner in AI | basic project reviewing, identifying errors and paying attention to detail 
 
 
 
