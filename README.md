@@ -16,7 +16,8 @@
 | Pun | `@pun-placeholder` | Content Writer | [e.g., beginner in AI] | Explaining pipelines, business dynamics |
 | Egshiglen | `@egshiglen-dotcom` | Video Lead & Quality Lead | [e.g., beginner in AI] | Evaluating quality, identifying failure modes |
 | Shark | `@Rashark2120` | Video Lead | [e.g., beginner in AI] | Content research, Canva Design, Presentations. |
-| [7th Member] | `@placeholder` | [Role] | [Experience] | [Strengths] |
+| Samuel | `@SamuelT8` | Quality Lead |  basic project reviewing, identifying errors and paying attention to detail 
+ | [Strengths] |
 > *Note: Please replace the remaining placeholder GitHub usernames, the 7th member, and experience notes with your team's real information.*
 
 ---
