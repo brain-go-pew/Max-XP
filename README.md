@@ -10,11 +10,11 @@
 
 | Name | GitHub username | Role | Experience | Strengths |
 |---|---|---|---|---|
-| 1820262105 Kuypheav (陈贵标) | `@brain-go-pew` | Coordinator (CEO), Repository & Submission Lead (CIO) | Tech-savy (enough), regular AI user | Planning, task tracking, communication, keeping deadlines visible |
+| 1820262105 Kuypheav (陈guibiao) | `@brain-go-pew` | Coordinator (CEO), Repository & Submission Lead (CIO) | Tech-savy (enough), regular AI user | Planning, task tracking, communication, keeping deadlines visible |
 | 1820262353 Sopanha (龙志明) | `@panha-placeholder` | Content Writer | beginner in AI usage | Clear explanations, structuring learning sequences |
-| 1820262135 Bryan (柴博) | `@nmblu-bolt` | Content Lead | intermediate - experience on c++ coding and video editing | Researching search evolution, query strategies |
-| 1820262128 Pitadon (吴颙庆) | `@pitadonuni-source` | Content Writer, Visual Design | beginner in AI usage | Explaining pipelines, business dynamics |
-| 1820262359 Egshiglen (英诗论） | `@egshiglen-dotcom` | Video Lead & Quality Lead | beginner in AI usage | Evaluating quality, identifying failure modes |
+| 1820262135 Bryan (Chai Bo) | `@nmblu-bolt` | Content Lead | intermediate - experience on c++ coding and video editing | Researching search evolution, query strategies |
+| 1820262128 Pitadon (Wu Yongqing) | `@pitadonuni-source` | Content Writer, Visual Design | beginner in AI usage | Explaining pipelines, business dynamics |
+| 1820262359 Egshiglen (English Poetry Theory) | `@egshiglen-dotcom` | Video Lead & Quality Lead | beginner in AI usage | Evaluating quality, identifying failure modes |
 | 1820262120 Rashark (杨素昀) | `@Rashark2120` | Video Lead | beginner in AI usage | Content research, Canva Design, Presentations. |
 | 1820262109 Samuel | `@SamuelT8` | Quality Lead |  Beginner in AI | basic project reviewing, identifying errors and paying attention to detail 
 
@@ -22,6 +22,18 @@
 
 ---
 
+## Project Purpose
+
+This repository is the team’s shared workspace for the Stage 1 GitHub and Markdown assignment. Its purpose is to develop the first substantial version of the **AI Overview** module’s learning content in Markdown.
+
+The Markdown content in this repository is intended to become the shared foundation for the module’s:
+- Study Guide
+- PPT Slides
+- Video Tutorials
+
+Version 1.0 will contain substantive learning material—not only headings or a future plan. The developed content will include accurate beginner-friendly explanations, definitions of unfamiliar terms, at least one worked example, a useful visual, a learner activity, an explained answer, and identifiable references.
+
+---
 
 ## Location of Materials
 
