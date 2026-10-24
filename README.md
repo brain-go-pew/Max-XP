@@ -19,7 +19,6 @@
 | Samuel | `@SamuelT8` | Quality Lead |  Beginner in AI | basic project reviewing, identifying errors and paying attention to detail 
 
 
-> *Note: Please replace the remaining placeholder GitHub usernames, the 7th member, and experience notes with your team's real information.*
 
 ---
 
