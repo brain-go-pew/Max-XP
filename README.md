@@ -29,34 +29,32 @@ The table below shows where project materials are located in the repository. All
 
 | Path | What belongs there | Current status |
 |---|---|---|
-| `README.md` | Team, module, project purpose, intended learners, repository structure, progress | Drafted |
-| `Module Outline.md` | Whole-module outline: learning outcomes, topics, sequence, prerequisites, status labels | In progress |
+| `README.md` | Team, module, project purpose, intended learners, repository structure, progress | Completed |
+| `Module Outline.md` | Whole-module outline: learning outcomes, topics, sequence, prerequisites, status labels | Completed |
 | `Master To-do List.md` | High-level checklist of all tasks that need to be completed for the project | Active |
 | `Project Plan.md` | Detailed project plan and task list, including owners and deadlines | Active |
 | `review-log.md` | Record of peer review: what was checked, found, and corrected | To be updated |
 | `Project Requirements.docx` | Original assignment instructions and requirements document | Reference |
 | `Study Guide/` | Folder for learning-content `.md` files for each section of the module | To be populated |
 | `Video Tutorials/` | Folder for video tutorial scripts and related assets | To be populated |
-| `logs/Taing Kuypheav` | AI-use records, if AI assistance is used, according to the assignment rules | Active |
-| `assets/images/` | Diagrams, tables saved as images, annotated images, and visual assets | To be created |
+| `logs/` | AI-use records, if AI assistance is used, according to the assignment rules | Active |
+| `assets/images/` | Diagrams, tables saved as images, annotated images, and visual assets | Active |
 | `assets/examples/` | Supporting example files or data used in worked examples | To be created |
 
 ### Planned repository structure
 
 ```text
 .
-├── README.md
-├── Module Outline.md
-├── Master To-do List.md
-├── Project Plan.md
-├── review-log.md
-├── Project Requirements.docx
-├── Study Guide/
-│   └── [content .md files]
-├── Video Tutorials/
-│   └── [scripts and notes]
+├── AI Overview/
+├── assets/
 ├── logs/
-│   └── [AI-use records]
-└── assets/
-    ├── images/
-    └── examples/
+│ └── ai-use/
+│       └── [AI-use records]
+├── Master To-do List.md
+├── Module Outline.md
+├── Project Plan.md
+├── Project Requirements.docx
+├── README.md
+├── Study Guide/
+├── Video Tutorials/
+└── review-log.md
