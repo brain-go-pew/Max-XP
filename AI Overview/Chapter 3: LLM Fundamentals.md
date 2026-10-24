@@ -1,4 +1,4 @@
-# Chapter 3. LLM Fundamentals
+<img width="2816" height="1536" alt="image" src="https://github.com/user-attachments/assets/5bfae9c4-9fea-472c-ac15-271479c0e1e3" /># Chapter 3. LLM Fundamentals
 
 ## Learning Objectives
 
@@ -60,13 +60,11 @@ LLMs do not process raw text character by character. A tokenizer splits input in
 3. Merge the most frequent pair into a single new token.
 4. Repeat steps 2–3 until the vocabulary reaches a target size.
 
-The result is a vocabulary in which common words are single tokens and rare words are built from pieces. "The" is one token. "Unbelievable" might be "un" + "believ" + "able".
+The result is a vocabulary in which common words are single tokens and rare words are built from pieces. "The" is one token. "Unbelievable" might be "un" + "believ" + "able". Why this shape? Whole-word vocabularies can't handle words the model has never seen, and they would need millions of entries. Character-level vocabularies can build any word, but sequences become very long, and attention cost grows with sequence length. Sub-word vocabularies sit in between: expressive enough for any word, short enough to be efficient.
 
-Why this shape?
+![Byte pair encoding merges the most frequent adjacent character pairs into sub-word tokens](https://media.geeksforgeeks.org/wp-content/uploads/20260918144115070601/frame_3828.webp)
 
-- **Whole-word vocabularies** can't handle words the model has never seen, and they would need millions of entries.
-- **Character-level vocabularies** can build any word, but sequences become very long, and attention cost grows with sequence length.
-- **Sub-word vocabularies** sit in between: expressive enough for any word, short enough to be efficient.
+*Figure 1. Byte pair encoding builds a sub-word vocabulary by repeatedly merging the most frequent adjacent pairs. Image: [GeeksforGeeks — "Byte Pair Encoding (BPE) in NLP"](https://www.geeksforgeeks.org/nlp/byte-pair-encoding-bpe-in-nlp/).*
 
 Two variants do the same job with different merging rules. **WordPiece** is used by BERT and GPT-family models. **SentencePiece** works directly on raw text and handles languages without spaces, such as Chinese and Japanese. Vocabulary size matters as well: Llama 3 uses a 128K-token vocabulary. A bigger vocabulary shortens sequences but makes the output layer more expensive; a smaller one does the reverse.
 
@@ -78,10 +76,11 @@ Each token ID is used to look up a row in a large table — the embedding matrix
 
 In an embedding space, distance means something. Words used in similar contexts end up with similar vectors, because training nudges them there. You can add and subtract them: the classic example is that "king" − "man" + "woman" lands near "queen."
 
-There are two kinds of embeddings:
+There are two kinds of embeddings. Word2Vec and GloVe gave each word one fixed vector regardless of context. Transformers do not. Because attention mixes in information from the surrounding words, "bank" in "river bank" and "bank" in "investment bank" end up with different vectors. The vector is contextual — it depends on the whole sentence.
 
-- **Static embeddings** (Word2Vec, GloVe) gave each word one fixed vector regardless of context.
-- **Contextual embeddings** (transformers) do not. Because attention mixes in information from the surrounding words, "bank" in "river bank" and "bank" in "investment bank" end up with different vectors. The vector depends on the whole sentence.
+![Embedding space in which words with similar meanings are positioned close together](https://matthewmanela.com/wp-content/uploads/2023/10/image-3.png)
+
+*Figure 2. Embeddings represent tokens as vectors in a multi-dimensional space, where proximity encodes similarity of meaning. Image: [Matthew Manela — "Exploring the Power of LLM Embeddings"](https://matthewmanela.com/blog/exploring-the-power-of-llm-embeddings/).*
 
 ### 2. The Transformer and Self-Attention
 
@@ -90,6 +89,10 @@ This is the part that does the actual thinking. Imagine a room where every word 
 Take the sentence: *"The animal didn't cross the street because it was too tired."* What does "it" refer to? You know it's the animal, not the street. A model with attention can work that out too: when processing "it", it looks back at all the other words, decides "animal" is the most relevant one, and pulls that meaning in.
 
 The model does this in many layers, stacked on top of each other. Each layer lets words refine their understanding using what the previous layer worked out. Because a stack of layers has no sense of order, the model also needs seat numbers — that's what **positional encoding** does, so it knows which word came first.
+
+![Positional encoding adds a position signal to each token embedding](https://media.geeksforgeeks.org/wp-content/uploads/20250818131508982635/positional_encoding_in_transformer.webp)
+
+*Figure 3. Positional encoding injects a position signal into each token's embedding, so the model can tell "dog bites man" from "man bites dog". Image: [GeeksforGeeks — "Positional Encoding in Transformers"](https://www.geeksforgeeks.org/nlp/positional-encoding-in-transformers/).*
 
 Every token in the input has a list of numbers attached to it — its vector. That vector is the model's current best guess at what that token means in this sentence. Self-attention is the operation that lets each token revise its vector by looking at the other tokens around it. The process happens in five steps.
 
@@ -103,6 +106,10 @@ Every token in the input has a list of numbers attached to it — its vector. Th
 
 The names are a useful metaphor, not a literal description. Concretely, they are just three linear transformations of the same input vector.
 
+![The same input vector projected three ways into query, key, and value vectors](https://miro.medium.com/v2/resize:fit:1200/1*6JpXMLrsmNcf8-x3aV2Tvg.png)
+
+*Figure 4. One input vector is projected three ways — query, key, and value — using three separately learned weight matrices. Image: [2020 Machine Learning — "Decoding the Key, Query, Value Mechanism in Transformer Models"](https://2020machinelearning.medium.com/decoding-the-key-query-value-mechanism-in-transformer-models-thru-a-deep-discussion-with-claude-ai-2da5a66d4f8e).*
+
 **Step 2 — Scoring.** To decide how much token A should pay attention to token B, the model takes the dot product of A's query with B's key. A dot product measures alignment: if the two vectors point in similar directions, the result is large and positive; if they are unrelated or opposed, it is small or negative. So a high score means "B's key matches what A's query is looking for."
 
 The model does this for every ordered pair of tokens. With *n* tokens, that is *n* × *n* scores.
@@ -115,11 +122,19 @@ The model does this for every ordered pair of tokens. With *n* tokens, that is *
 
 **Causal masking.** For a model that generates text left to right, token 5 must not be allowed to look at token 6 — token 6 does not exist yet at generation time, and training on it would be cheating. This is the **causal mask**, and it is what makes left-to-right generation well-defined.
 
+![A causal mask blocks each token from attending to future positions](https://llm.modular.com/images/causal-masking-light.png)
+
+*Figure 5. The causal mask zeroes out attention to future tokens, so token 5 can see tokens 1–5 but not token 6. Image: [Modular — "LLM Step 03"](https://llm.modular.com/step_03.html).*
+
 Most modern LLMs are built on the transformer architecture. Earlier language models processed text more sequentially, which made it hard to capture relationships across long passages. Transformers use self-attention to consider relationships among words throughout an entire sentence, paragraph, or document. More technically, self-attention computes, for each token, a weighted combination of representations of every other token in the context, with weights derived from learned query, key, and value projections. This is why transformers can handle long-range context and why training can be parallelized efficiently across accelerators.
 
 ### 3. Training: Pretraining → Post-Training → Reasoning
 
 Modern LLMs go through multiple training stages.
+
+![A pipeline of the training stages an LLM passes through](https://wmpyxajsoiwnvxkmfqty.supabase.co/storage/v1/object/public/website_images/blog_post_images/Gemini_Generated_Image_s7kdtts7kdtts7kd.png)
+
+*Figure 6. Modern LLMs are trained in stages — pretraining, post-training, and reasoning-focused reinforcement learning — each with a different training signal. Image: [Intelligent Tools — "Demystifying Large Language Models"](https://intelligenttools.co/blog/demystifying-large-language-models).*
 
 | Stage | Objective | What it produces |
 |---|---|---|
@@ -308,3 +323,15 @@ The short version: **pretraining teaches the model language; post-training teach
 7. The when where and how of LLM failures, measured. Zenodo. Accessed October 21, 2026. https://zenodo.org/records/14243944
 
 8. Tree of agents: improving long-context capabilities of LLMs. In: *Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics*. Association for Computational Linguistics; 2025. Accessed October 21, 2026. https://aclanthology.org/2025.acl-long.1012/
+
+9. GeeksforGeeks. Byte pair encoding (BPE) in NLP. Accessed October 21, 2026. https://www.geeksforgeeks.org/nlp/byte-pair-encoding-bpe-in-nlp/
+
+10. Manela M. Exploring the power of LLM embeddings. Matthew Manela. Accessed October 21, 2026. https://matthewmanela.com/blog/exploring-the-power-of-llm-embeddings/
+
+11. GeeksforGeeks. Positional encoding in transformers. Accessed October 21, 2026. https://www.geeksforgeeks.org/nlp/positional-encoding-in-transformers/
+
+12. 2020 Machine Learning. Decoding the key, query, value mechanism in transformer models thru a deep discussion with Claude AI. Medium. Accessed October 21, 2026. https://2020machinelearning.medium.com/decoding-the-key-query-value-mechanism-in-transformer-models-thru-a-deep-discussion-with-claude-ai-2da5a66d4f8e
+
+13. Modular. LLM Step 03: causal masking. Accessed October 21, 2026. https://llm.modular.com/step_03.html
+
+14. Intelligent Tools. Demystifying large language models. Accessed October 21, 2026. https://intelligenttools.co/blog/demystifying-large-language-models
