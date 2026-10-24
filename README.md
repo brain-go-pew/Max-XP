@@ -17,7 +17,7 @@
 | Egshiglen | `@egshiglen-dotcom` | Video Lead & Quality Lead | [e.g., beginner in AI] | Evaluating quality, identifying failure modes |
 | Shark | `@Rashark2120` | Video Lead | [e.g., beginner in AI] | Content research, Canva Design, Presentations. |
 | Samuel | `@SamuelT8` | Quality Lead |  Beginner in AI | basic project reviewing, identifying errors and paying attention to detail 
-|
+
 
 > *Note: Please replace the remaining placeholder GitHub usernames, the 7th member, and experience notes with your team's real information.*
 
