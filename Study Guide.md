@@ -46,6 +46,7 @@ By the end of this module, learners should be able to:
 - We need to decide if the Google Form assessment is created directly in Google Forms or if the questions are drafted in Markdown first.
 - Visual assets (flowcharts for Section 5) are missing and need to be created or sourced.
 
+
  Chapter 3. LLM Fundamentals
 
 ## Learning Objectives
