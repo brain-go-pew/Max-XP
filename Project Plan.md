@@ -1,4 +1,4 @@
-Link to the project plan PPT: https://canva.link/6bh51lkz8g34t7x
+Link to the project plan PPT: (https://canva.link/ty7xfvu51tsvmeo)
 
 ## Team
 
