@@ -10,7 +10,7 @@ Link to the project plan PPT: https://canva.link/6bh51lkz8g34t7x
 | Pun | `@pun-placeholder` | Content Writer | [e.g., beginner in AI] | Explaining pipelines, business dynamics |
 | Egshiglen | `@egshiglen-placeholder` | Content Writer | [e.g., beginner in AI] | Evaluating quality, identifying failure modes |
 | Shark | `@shark-placeholder` | Content Writer | [e.g., beginner in AI] | User experience, accessibility, risk assessment |
-| [7th Member] | `@placeholder` | [Role] | [Experience] | [Strengths] |
+| Samuel | `@SamuelT8` | Quality lead | Beginner in AI |  basic project reviewing, identifying errors and paying attention to detail |
 
 > *Note: Please replace the remaining placeholder GitHub usernames, the 7th member, and experience notes with your team's real information.*
 
