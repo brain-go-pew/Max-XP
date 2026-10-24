@@ -1,0 +1,266 @@
+TOPIC 5: UNDER THE HOOD
+How AI search turns a question into a cited answer
+
+The pipeline at a glance: query fan-out → retrieval and indexes → reranking and passage selection → grounding and generation (RAG) → citation attribution. Platform differences (6) and accuracy and failure modes (7) apply to every step.
+
+5.1 Query fan-out
+
+In simple terms. The AI doesn’t search once. It splits your question into many smaller questions and searches each, like asking five friends five different things to answer one big question.
+
+What it is. Query fan-out is when an AI search system breaks a question into several smaller searches to gather information from different angles.
+
+How it works.
+
+The system identifies the main question and related subtopics.
+It generates multiple search queries, sometimes running them in parallel.
+It gathers the results and combines relevant information into one response.
+
+Why it matters. A website might not rank for the user’s original question but can still appear for one of the smaller searches.
+
+Business impact. Companies need useful content covering specific customer questions, not just one page aimed at a popular keyword.
+
+Example. “What is the best electric car for a university student?” might become separate searches on prices, battery range, safety ratings and charging costs.
+
+Research findings.
+
+Google says AI Overviews and AI Mode may use this “query fan-out” technique. 
+geotoolbox
+AI prompts are long, around 70 to 80 words versus 3 to 4 for traditional queries. 
+airops
+AirOps (a vendor) found 88.6% of ChatGPT prompts produce exactly two sub-queries, and 95% of those have zero search volume. Informational queries are often restated near-verbatim (39.9%), while commercial ones are often split into components (38.4%). 
+Back to Customer Stories
+ +2
+32.9% of citations came only from fan-out results, never the original prompt’s results. 
+airops
+
+Sources
+
+Google Search Central, AI features: https://developers.google.com/search/docs/appearance/ai-features
+Google, AI Mode update: https://blog.google/products-and-platforms/products/search/google-search-ai-mode-update/
+GEO Toolbox, “What is query fan-out”: https://geotoolbox.ai/blog/query-fan-out
+AirOps, “Query fan-out pipeline”: https://www.airops.com/blog/query-fanout-pipeline
+5.2 Retrieval and indexes
+
+In simple terms. An index is a giant catalogue of web pages, like a library’s. The AI searches the catalogue to find pages that might help. If your page isn’t in it, the AI can’t find it.
+
+What it is. Retrieval is finding relevant information. An index is a structured database that lets a search engine find web content efficiently.
+
+How it works.
+
+Search engines discover and crawl web pages.
+They process the content and store it in searchable indexes.
+When a question arrives, the system retrieves potentially relevant pages or passages.
+Some AI systems also use licensed databases, product catalogues or connected tools.
+
+Why it matters. A page that isn’t indexed or accessible is less likely to appear in answers, but being indexed doesn’t guarantee selection.
+
+Business impact. Sites need to be technically accessible, clearly structured and useful so systems can discover them.
+
+Example. A shop’s product page that blocks crawlers may never be retrieved, however good it is.
+
+Research findings.
+
+Retrieval often uses hybrid retrieval merged with reciprocal rank fusion (RRF). Hybrid search combines vector search with traditional keyword search for better recall. 
+peec
+github
+Embeddings capture meaning, not keywords, so differently worded text can still match. 
+airtribe
+One analysis says ChatGPT pulls about 36.5 pages per query but cites only around 15%. 
+parse
+Retrieval isn’t the same as top rankings: only 38% of AI Overview citations come from the top 10 organic results. 
+tryvizup
+One vendor guide ties ChatGPT’s retrieval to Bing (via Bing integration), but that is vendor-reported. 
+averi
+Blocking isn’t airtight: TollBit found 15% of AI page fetchers in Europe reached URLs that had been disallowed. 
+ppc
+
+Sources
+
+Google Search Central, How Search Works (named in your ChatGPT document; I haven’t opened it)
+Peec, “How AI search chooses passages”: https://docs.peec.ai/research/how-ai-search-chooses-passages
+Parse, “How AI retrieval works”: https://www.parse.gl/blog/how-ai-retrieval-works-brands
+Vizup: https://www.tryvizup.com/blog/how-ai-search-engines-retrieve-and-cite-content
+Averi (Bing claim): https://www.averi.ai/learn/the-definitive-guide-to-geo-get-cited-by-ai-in-2026
+PPC Land, crawl-to-referral ratio (TollBit finding): https://ppc.land/crawl-to-referral-ratio/
+5.3 Reranking and passage selection
+
+In simple terms. The AI grabs a big pile of possible answers, then keeps only the best few, like picking your top 5 candies from a bowl of 150. It judges small pieces (single paragraphs), not whole pages.
+
+What it is. After retrieving many sources, the system scores and reorders them. Passage selection means choosing specific sections rather than the whole page.
+
+How it works.
+
+The system retrieves a broad set of candidates.
+A ranking model evaluates how closely each matches the question.
+It selects useful passages or paragraphs for the answer.
+
+Why it matters. A site with excellent information can still be overlooked if the relevant detail is unclear or hard to find.
+
+Business impact. Clear headings, direct answers, accurate facts and organised information can help, but there is no guaranteed formula for being selected.
+
+Example. For “does this electric car perform well in cold weather?”, a paragraph on winter battery performance beats a general introduction.
+
+Research findings.
+
+A cross-encoder-style model reads each candidate passage against the query and re-scores the shortlist. 
+peec
+Chunking decides what the model sees, and overlapping chunks help preserve context at the edges. 
+glukhov
+dotzlaw
+In one analysis, position 1 was cited 58% of the time, position 5 about 25%, and position 10 only 14%. 
+airops
+
+Sources
+
+Peec: https://docs.peec.ai/research/how-ai-search-chooses-passages
+AirOps: https://www.airops.com/blog/query-fanout-pipeline
+Glukhov, RAG guides: https://www.glukhov.org/categories/rag/
+Dotzlaw: https://dotzlaw.com/insights/retrieval-augmented-generation-grounding-ai-with-real-world-knowledge/
+Nogueira and Cho, Passage Re-ranking with BERT (named in your ChatGPT document; I haven’t opened it)
+5.4 Grounding and generation (RAG)
+
+In simple terms. Grounding means the AI checks real sources while answering instead of guessing from memory, like writing a school report with the books open beside you.
+
+What it is. Grounding connects an answer to evidence. RAG (retrieval-augmented generation) retrieves outside information and hands it to a language model when it writes the answer.
+
+How it works.
+
+The user asks a question.
+The system retrieves relevant documents or passages.
+The model uses them as context.
+The model writes an answer from the question and the evidence.
+
+Why it matters. Evidence can make answers more current and checkable, but retrieval doesn’t guarantee correctness: sources can be outdated or contradictory, and the model can misread them.
+
+Business impact. Companies with accurate, current, accessible information are likelier to be represented correctly.
+
+Example. For “latest price of this laptop”, the system can fetch the retailer’s current page rather than rely on training data.
+
+Research findings.
+
+Models have a knowledge cutoff and a finite context window, so RAG looks up the relevant information first and puts it into the prompt. 
+github
+airtribe
+Grounding is using retrieved information to support the claims in the response, which differs from indexing. Synthesis composes one answer from sources that may not fully agree. 
+tryvizup
+tryvizup
+Components include a chunker, an embedding model, a vector database and a generator (the LLM that produces the final response from the augmented prompt). 
+github
+One practitioner write-up says models attend most to the beginning and end of context, with a “lost in the middle” effect. That’s a single blog’s summary, so verify it. 
+github
+
+Sources
+
+Lewis et al. (2020), Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks (named in your ChatGPT document; I haven’t opened it)
+NovCog, “RAG Fundamentals”: https://gist.github.com/NovCog/626815a4fbd4c8c6a22d50a421b90d31
+Airtribe: https://www.airtribe.live/upskill-for-free/resources/interactive-explainers/grounding/grounding-your-data
+AI Agent Design Patterns wiki: https://github.com/joehubert/ai-agent-design-patterns/wiki/Retrieval%E2%80%90Augmented-Generation-(RAG)
+Vizup: https://www.tryvizup.com/blog/how-ai-search-engines-retrieve-and-cite-content
+5.5 Citation attribution
+
+In simple terms. The AI adds “I got this from here” links, like footnotes. Sometimes a brand is mentioned in the answer without getting a link.
+
+What it is. Linking claims in an answer to the sources that support them. Two ideas to keep apart:
+
+Citation: the answer includes a link.
+Attribution: the source really supports that claim. A link alone doesn’t prove it does.
+
+How it works. The system selects sources, decides which claim each supports, and renders links or footnotes. Formats vary by platform.
+
+Why it matters. Users need to verify information, and publishers want credit and visitors.
+
+Business impact. A company can be mentioned without a clickable link, so brand visibility and website traffic can come apart.
+
+Example. An answer says a laptop has the longest battery life and links a review. To check attribution, open the review and see whether it makes that comparison.
+
+Research findings.
+
+The Tow Center (March 2025) tested eight AI search tools on news citations and they got the information wrong more than 60% of the time. Perplexity was wrong 37% of the time and Grok-3 94%. 
+niemanlab
+The tools fabricated links and cited syndicated copies, and licensing deals didn’t guarantee accurate citation. 
+yahoo
+yahoo
+32.9% of citations came only from fan-out results, so the cited page may never have appeared for the original question. 
+airops
+
+Sources
+
+Nieman Lab on the Tow Center study: https://www.niemanlab.org/2025/03/ai-search-engines-fail-to-produce-accurate-citations-in-over-60-of-tests-according-to-new-tow-center-study/
+Fortune via Yahoo: https://tech.yahoo.com/ai/articles/ai-search-engines-confidently-wrong-122456267.html
+Columbia Journalism Review, “AI search has a citation problem” (original study)
+OpenAI Help Center, “Searching the web with ChatGPT” and Perplexity Help Center, Pro Search (named in your ChatGPT document; I haven’t opened them)
+5.6 Platform differences
+
+In simple terms. Each AI search tool is a different chef making the same dish with a different recipe, so ChatGPT, Google and Perplexity often pick different sources.
+
+What it is. Different platforms can give different answers and cite different sites for the same question.
+
+How it works. Platforms may differ in their search providers and sources, how they expand queries, how they rank and select, the models and instructions that write the answer, and their citation formats.
+
+Why it matters. Appearing in one platform’s answer doesn’t mean appearing in another’s.
+
+Business impact. Businesses may need to monitor visibility across several platforms, not just Google rankings.
+
+Example. “Best universities for mechanical engineering in Europe” may draw on different rankings, official pages and education sites in each tool.
+
+Research findings.
+
+Google documents fan-out. For others it’s inferred: ChatGPT runs multiple searches per prompt, but OpenAI hasn’t published the retrieval architecture, and Perplexity’s behaviour matches the pattern but isn’t clearly vendor-labeled. 
+geotoolbox
+geotoolbox
+Citation habits differ. Vendor guides report Reddit is 46.7% of Perplexity’s top-10 citations and 21% of Google AI Overview citations. Those are unverified vendor numbers. 
+rankai
+Error rates varied widely in the Tow Center test (Perplexity 37%, Grok-3 94%), per 5.5.
+None of these sources shows which platform is best overall.
+
+Sources
+
+GEO Toolbox: https://geotoolbox.ai/blog/query-fan-out
+RankAI: https://rankai.ai/articles/how-to-do-geo
+Nieman Lab: https://www.niemanlab.org/2025/03/ai-search-engines-fail-to-produce-accurate-citations-in-over-60-of-tests-according-to-new-tow-center-study/
+Google, OpenAI web search documentation and Perplexity “How it works” (named in your ChatGPT document; I haven’t opened them)
+5.7 Accuracy and failure modes
+
+In simple terms. The AI sometimes gets it wrong and says it with total confidence. It might link a page that doesn’t exist or credit the wrong site, like a kid who’s sure of the answer but mixed up the facts.
+
+What it is. AI search can state false information, misread sources, or cite sources that don’t support the claim.
+
+Common failure modes.
+
+Hallucination: false or unsupported information.
+Outdated information: old facts used after things changed.
+Incorrect attribution: a claim linked to a source that doesn’t support it.
+Source selection errors: low-quality or misleading material relied on.
+Conflicting evidence: disagreeing sources merged without explanation.
+
+Why it matters. Answers sound confident even when wrong. Citations make checking easier but don’t remove errors.
+
+Business impact. Wrong AI statements can hurt a company’s reputation and mislead customers, so keep key web information accurate and current.
+
+Example. An assistant recommends a university using an outdated tuition fee, or misstates an admission requirement from an old page.
+
+Research findings.
+
+Each pipeline stage fails differently, so a page can be missed at fan-out, retrieval or reranking. 
+peec
+Tools were also confidently wrong, and got the information wrong more than 60% of the time in the Tow Center news-citation test. 
+niemanlab
+niemanlab
+Your ChatGPT document cites a 2025 medical-referencing study (60.4% of 303 references accurate; 22.2% of 451 citations highly relevant). I haven’t verified it, and the document itself says it shouldn’t be generalised. Check it on PubMed, or lean on the Tow Center results, which are about AI search.
+
+Sources
+
+Nieman Lab: https://www.niemanlab.org/2025/03/ai-search-engines-fail-to-produce-accurate-citations-in-over-60-of-tests/
+Fortune via Yahoo: https://tech.yahoo.com/ai/articles/ai-search-engines-confidently-wrong-122456267.html
+Peec: https://docs.peec.ai/research/how-ai-search-chooses-passages
+2025 medical-referencing study on PubMed (linked in your ChatGPT document)
+How the seven topics connect
+Query fan-out: break the question into smaller searches.
+Retrieval and indexes: find relevant pages and information.
+Reranking and passage selection: pick the most useful sources and passages.
+Grounding and generation: use that evidence to write the response.
+Citation attribution: connect claims to supporting sources.
+Platform differences: each tool runs its own version of steps 1 to 5.
+Accuracy and failure modes: things can go wrong at every step, so users must check.
+
+Caution for slides. Call Google’s fan-out “documented” and ChatGPT’s behaviour “observed.” Peec’s 800-token chunk example describes OpenAI’s File Search product, not its web search.
