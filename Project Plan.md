@@ -87,3 +87,96 @@ By the end of the module, beginners should be able to:
 | Facts differing between resources | Treat the Markdown as the single source and follow the correction process. |
 | Time-sensitive facts going stale (market share, laws, product features) | Date every figure and recheck before Stage 3. |
 | Scope too broad | Agree priorities with the teacher and give low-priority topics brief treatment. |
+
+## 5. Shared Markdown Content Plan
+
+The Shared Markdown Content is the foundational single source of truth for the entire project. All PPT slides, video scripts, and study guide materials will be generated directly from these Markdown files. 
+
+### What is the Shared Markdown Content?
+The Markdown content is a detailed, text-based educational resource that organizes the entire AI Overview curriculum. It is not just a collection of notes; it is a structured teaching tool designed for beginners. It will be stored in the `Study Guide/` folder in the repository.
+
+### Requirements for the Markdown Chapters
+Every chapter in the Markdown content must include the following core components to ensure high-quality learning:
+1. **Explanations:** Accurate, beginner-friendly explanations of the main concepts.
+2. **Terminology:** Definitions of unfamiliar terms (e.g., LLM, RAG, Grounding, SERP) when they first appear.
+3. **Worked Example / Demonstration:** A step-by-step illustration showing how an idea works.
+4. **Visuals:** Diagrams, tables, or annotated images placed in the `assets/images/` folder and linked correctly.
+5. **Learner Activity:** An application question that requires learners to use the concept.
+6. **Explained Answer:** A clear explanation of the expected outcome, allowing learners to check their understanding.
+7. **References:** Identifiable sources supporting the content and any borrowed material.
+
+### Chapter Breakdown (The 17 Project Components)
+The shared Markdown content will cover all 17 modules, which are divided into the following sections:
+- **Part 1: The Big Picture** (What AI Overviews are, evolution of search)
+- **Part 2: AI Fundamentals & Tools** (What LLMs are, who's playing in the AI space)
+- **Part 3: Under the Hood** (The pipeline from query to cited answer)
+- **Part 4: Using It Well** (Query strategies, verifying claims, trusting citations)
+- **Part 5: Accuracy & Quality** (Grounding, hallucination control, measuring quality, limitations)
+- **Part 6: Human & Business Impact** (UX, accessibility, risks, responsibilities, SEO, monetisation)
+
+---
+
+## 6. PPT Presentation Plan
+
+**Goal:** Create a 12-15 chapter slide presentation that visually explains ideas precisely to our target audience.
+
+**Structure Per Chapter:**
+Every chapter in the PPT must include the following elements:
+- **Learning Objectives:** What the audience should know by the end of the slide.
+- **Visual Explanations:** Diagrams, charts, or infographics that simplify complex ideas (e.g., the search pipeline).
+- **Knowledge Checks:** Quick questions to test audience understanding.
+- **Fun Facts / Case Studies:** Real-world examples of AI Overviews working (or failing) to keep the audience engaged.
+
+**Conclusion & Resources:**
+- The final slides will include references and resources for the target audience to find out more information about the topic.
+- A glossary of key terms.
+
+---
+
+## 7. Video Tutorial Production Plan
+
+**Goal:** Turn all 17 project components into one coherent educational video that explains AI Overviews, how they work, their benefits and risks, and how they affect search and business.
+
+**Format:** Student interviews + AI-generated explainer videos + PowerPoint slides with voiceover.
+
+**Part 1 — Interviews: How People Use AI**
+- *Concept:* Start with real student responses to introduce the topic and reveal what people know about AI.
+- *Questions to ask:*
+  - What AI tools do you use most?
+  - Do you know what LLMs are?
+  - Have you used Google AI Overviews?
+  - Do you trust AI-generated answers?
+  - Have you ever received an incorrect AI answer?
+
+**Part 2 — AI-Generated Explainer Videos**
+- *Concept:* Use generated animations to make technical concepts easier to understand.
+- *Topics covered:* 
+  - What LLMs are and how they operate.
+  - How search evolved from links to generated answers.
+  - The pipeline from a query to a cited answer.
+  - Grounding, retrieval, and hallucinations.
+
+**Part 3 — PowerPoint With Voiceover**
+- *Concept:* Explain the remaining topics through slides, diagrams, examples, and narration.
+- *Topics covered:*
+  - AI tools people actually use.
+  - Using AI search effectively and verifying citations.
+  - Measuring quality and understanding limitations.
+  - User experience, accessibility, risks, and responsibilities.
+  - Business impacts, SEO, and monetisation.
+
+---
+
+## 8. Live Mini Lecture Plan
+
+**Goal:** Focus on a manageable question within the broader project to deliver a high-impact, interactive session.
+
+**Selected Lecture Topic:** *"How to Spot a Hallucination: Verifying AI Search Citations in Real-Time."*
+
+**Why this topic?** It is highly practical, directly applicable to students' daily lives, and narrow enough to cover deeply in a mini-lecture (15-20 minutes). It pulls from "Using It Well" and "Limitations & Failure Modes."
+
+**Lecture Structure:**
+1. **Introduction (3 mins):** What is a hallucination? (Brief definition using Markdown glossary).
+2. **Live Demonstration (7 mins):** Perform 2-3 Google searches, show the AI Overview, and demonstrate exactly how to click and verify the citations.
+3. **The "Gotcha" Moment (5 mins):** Show an example where the AI Overview misrepresented a source, explaining *why* it happens (lack of grounding).
+4. **Interactive Q&A (5 mins):** Have the audience suggest a query, run it, and let them evaluate the citations.
