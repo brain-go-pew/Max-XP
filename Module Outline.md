@@ -26,16 +26,16 @@ By the end of this module, learners should be able to:
 |---|---|---|---|---|
 | 1 | **AI Overview: The Big Picture** — what AI Overviews are and why they exist | Panha | `outline only` | Needs introductory explanation |
 | 2 | **From Links to Answers** — how search evolved to this point | Brain | `outline only` | Focus on SERP evolution |
-| 3 | **AI Fundamentals** — What are LLMs? How do they operate? Capabilities? | Kuypheav | `outline only` | Needs terminology definitions |
+| 3 | **AI Fundamentals** — What are LLMs? How do they operate? Capabilities? | Kuypheav | `Completed` | Needs terminology definitions |
 | 4 | **Who's Playing: The AI Tools People Actually Use** | Kuypheav | `outline only` | Compare ChatGPT, Gemini, Perplexity, etc. |
-| 5 | **Under the Hood** — the pipeline from query to cited answer | Pun | `outline only` | Needs a visual flowchart |
+| 5 | **Under the Hood** — the pipeline from query to cited answer | Pun | `Completed` | Needs a visual flowchart |
 | 6 | **Using It Well** — query strategies, verifying claims, when to trust the citations | Brain | `outline only` | Needs a worked example activity |
 | 7 | **Making It Accurate** — grounding, hallucination control, source conflicts | Panha | `outline only` | Needs definitions for RAG and grounding |
-| 8 | **Measuring Quality** — how you know an overview is good | Egshiglen | `outline only` | |
-| 9 | **Limitations & Failure Modes** — When AI gets it wrong | Egshiglen | `outline only` | |
+| 8 | **Measuring Quality** — how you know an overview is good | Egshiglen | `Completed` | |
+| 9 | **Limitations & Failure Modes** — When AI gets it wrong | Egshiglen | `Completed` | |
 | 10 | **The User Experience** — design, trust signals, edge cases, Accessibility & inclusivity | Shark | `outline only` | |
 | 11 | **Risks & Responsibilities** — bias, publishers, misinformation, regulation, privacy, user data | Shark | `outline only` | |
-| 12 | **The Business Side** — SEO shifts, monetisation, market dynamics | Pun | `outline only` | |
+| 12 | **The Business Side** — SEO shifts, monetisation, market dynamics | Pun | `Completed` | |
 | 13 | **My Project & Wrap-Up** | [TBD] | `outline only` | |
 | 14 | **Conclusion & Takeaways** (10 slides) | [TBD] | `outline only` | |
 | 15 | **Key terms** (Glossary: grounding, hallucination, RAG, citation, SERP, etc.) | [TBD] | `outline only` | To be placed at the end of the guide |
