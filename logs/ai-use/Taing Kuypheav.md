@@ -8,6 +8,7 @@
 **Tool:** Deepseek with Deepthink and Search
 **Purpose of this log:** Record all substantive prompts used in this project, for transparency, reproducibility, and process review.
 
+**Most, if not all, of the prompting I have done includes the use of Deepseek with the Deepthink and Search functions on.**
 ---
 
 ## Summary
