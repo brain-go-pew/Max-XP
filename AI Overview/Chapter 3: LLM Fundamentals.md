@@ -1,4 +1,4 @@
-<img width="2816" height="1536" alt="image" src="https://github.com/user-attachments/assets/5bfae9c4-9fea-472c-ac15-271479c0e1e3" /># Chapter 3. LLM Fundamentals
+ Chapter 3. LLM Fundamentals
 
 ## Learning Objectives
 
@@ -132,7 +132,7 @@ Most modern LLMs are built on the transformer architecture. Earlier language mod
 
 Modern LLMs go through multiple training stages.
 
-![A pipeline of the training stages an LLM passes through](https://wmpyxajsoiwnvxkmfqty.supabase.co/storage/v1/object/public/website_images/blog_post_images/Gemini_Generated_Image_s7kdtts7kdtts7kd.png)
+![A pipeline of the training stages an LLM passes through](https://github.com/user-attachments/assets/5bfae9c4-9fea-472c-ac15-271479c0e1e3)
 
 *Figure 6. Modern LLMs are trained in stages — pretraining, post-training, and reasoning-focused reinforcement learning — each with a different training signal. Image: [Intelligent Tools — "Demystifying Large Language Models"](https://intelligenttools.co/blog/demystifying-large-language-models).*
 
