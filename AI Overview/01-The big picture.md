@@ -17,6 +17,16 @@ Search tools that work this way are called **answer engines**: they read the web
 
 Searching *"best laptop for video editing under $1,000"* in classic search gives ten review sites to compare. AI Mode instead writes a short comparison with recommended models and cites the reviews it used.
 
+### Classic search vs AI search (from Research Notes)
+
+| | Classic search | AI search |
+|---|---|---|
+| **You get** | A ranked list of links | A written answer + citations |
+| **Who does the reading** | You | The AI |
+| **Queries run behind the scenes** | Usually one | Often many ("fan-out") |
+| **Follow-up questions** | Start a new search | Continue the conversation |
+| **Main risk** | Low-quality pages | Confident but wrong answers |
+
 ---
 
 ## How big it is
@@ -24,6 +34,10 @@ Searching *"best laptop for video editing under $1,000"* in classic search gives
 - Google says AI Overviews reach **2 billion+ monthly users** in 200+ countries (some 2026 reports cite 2.5 billion).
 - Google AI Mode passed **1 billion monthly users** in 2026.
 - ChatGPT has more than **1 billion weekly users** (2026).
+
+### Additional context from Research Notes
+
+AI search is now mainstream. Google says AI Overviews reach more than 2 billion monthly users in 200+ countries (some 2026 reports cite 2.5 billion), and AI Mode passed 1 billion monthly users in 2026. It also changes the web's economy: a Pew Research study of 68,879 Google searches found people clicked a regular result in only 8% of visits when an AI summary appeared, vs. 15% without one, and clicked a link inside the summary just 1% of the time.
 
 ---
 
@@ -34,6 +48,12 @@ Searching *"best laptop for video editing under $1,000"* in classic search gives
 | **People want answers, not homework** | About half of ChatGPT messages are "Asking" for advice or information to help decide something. People want a direct answer they can act on. |
 | **Questions got harder** | AI Mode queries are about 3× longer than classic searches, and 1 in 5 uses voice, images or documents. Ten blue links don't answer those well. |
 | **The prize: owning the answer** | Whoever controls AI answers controls a huge share of online attention, advertising and shopping. That's why tech companies are investing hundreds of billions of dollars. |
+
+### The core economic tension (from Research Notes)
+
+The old web ran on a simple trade: websites let Google crawl their content, and Google sent them visitors, who saw ads or bought things. AI answers keep users on the search page, so that trade is breaking. Search engines still need fresh content, but the creators of that content get fewer visits.
+
+Why it matters: Whoever controls AI answers controls a huge share of online attention, advertising and shopping. This is why tech companies are investing hundreds of billions of dollars.
 
 ---
 
@@ -48,6 +68,10 @@ Answers are convenient, but they change:
 
 - **Who gets visited** (websites lose traffic)
 - **Who must be trusted** (the AI, not the source)
+
+### What this means for the web (from Research Notes)
+
+Websites that depend on visits for ad revenue or sales are losing their audience, while AI tools still rely on their content. If creators stop publishing, AI answers have less fresh, reliable material to draw on.
 
 ---
 
@@ -88,3 +112,14 @@ Guess what share of your own searches end without a click. Then look at your las
 | **AI Overview** | Google's AI-written summary at the top of results, with source links. |
 | **Answer engine** | A search tool that writes an answer instead of only listing links. |
 | **AI Mode** | Google's conversational, multi-turn AI search. |
+
+---
+
+## Sources (from Research Notes)
+
+- Nairametrics, AI Overviews hits 2 billion users
+- WrittenlyHub, AI Mode crosses 1 billion users
+- Search Engine Land, Pew study on AI Overview clicks
+- PPC Land, Pew AI summaries study
+- Stanford HAI, 2026 AI Index Report
+- Unite.AI, Stanford AI Index 2026 (consumer value)
