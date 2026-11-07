@@ -327,6 +327,106 @@ Extracted from this session for future use.
 - **AI Response Summary:** The AI provided a numbered folder structure and step-by-step instructions on how to use GitHub to create these folders by adding a `chapter-XX.md` file inside each one.
 - **Verification/Action Taken:** I followed the instructions to create the folders and files in the `Study Guide` directory of the repository.
 
+
+---
+
+## STAGE 2 — October 25 to November 7, 2026
+
+**Session period:** October 25 – November 7, 2026 (multiple sessions; individual timestamps recorded per interaction)
+**Tools:** DeepSeek (with Deepthink and Search), Gemini
+**Purpose of this stage:** Verifying team AI disclosures, writing and revising the Stage 2 personal log, writing the Stage 2 submission report, updating the README, and formatting the final package.
+
+---
+
+## Summary
+
+| # | Phase | Prompt (abbreviated) | Output produced |
+|---|---|---|---|
+| P23 | Review | Verify Bryan's Gemini disclosure meets requirements | Confirmation of disclosure completeness |
+| P24 | Admin | Draft a Stage 2 personal log | First draft of personal log |
+| P25 | Admin | Write the Stage 2 submission report | Full submission report with all required sections |
+| P26 | Revision | Revise personal log — more informative, less casual | Revised personal log focused on leadership actions |
+| G09 | Admin | Update README for Stage 2 | README.md updated to V2.0 |
+| G10 | Formatting | Format submission report as printable document | HTML document with cover page and TOC |
+
+---
+
+## Detailed entries
+
+### Stage 2 — DeepSeek
+
+#### P23
+> [Provided Bryan's Gemini disclosure for Test Bank Q30 and Q35] "Check whether this is a proper AI use disclosure. The purpose was generating multiple-choice distractors. Does it meet the assignment's requirements?"
+
+**Output:** Confirmed the disclosure met the requirements — it stated the tool and date, the purpose, the interaction, the verification method, and the outcome. Suggested adding the specific questions affected for clarity.
+
+**Verification:** Approved the disclosure after confirming Bryan had checked the distractors against Google Search Central documentation.
+
+---
+
+#### P24
+> [Provided the Stage 2 project log and personal notes] "Write a personal log for Stage 2. I'm the group leader — I organized meetings, assigned tasks, reviewed everyone's work, and submitted. Keep it informative, not too casual."
+
+**Output:** Initial draft of the personal log, structured by date, covering meeting organization, task assignment, review sessions, and final submission, with reflective notes on leadership and feedback.
+
+---
+
+#### P25
+> [Provided the project log, revision notes, and resource mapping] "Write the Stage 2 submission report. Include team information, revision summary, review results, resource mapping, GitHub evidence, gaps, and AI use disclosure. Follow the assignment requirements."
+
+**Output:** Full submission report covering all required sections — team and module information, package contents, revision summary (feedback → what changed → where), peer review results, resource mapping, selected commit evidence, quality checklist confirmation, remaining gaps, and AI use disclosure.
+
+**Verification:** Filled in the repository URL, commit hashes, and confirmed all figures against the project log before submission.
+
+---
+
+#### P26
+> [Provided a revised personal log] "The tone is a bit too casual. Make it more informative. Only log what actually happened — I organized meetings, directed the team, and kept reviewing work. I'm the leader, not the technical writer."
+
+**Output:** Rewrote the log with a more formal tone, removed embellished technical self-study content, and kept the focus on leadership actions — meetings organized, tasks assigned, work reviewed, errors corrected.
+
+**Verification:** Reviewed the output against my actual activities and accepted the revised draft.
+
+---
+
+### Stage 2 — Gemini
+
+#### Interaction 9: Updating the README
+**Date:** November 6, 2026
+
+**Prompt Used:**
+> [Provided the Stage 1 README and the current repository structure] "Update the README for Stage 2. All 12 chapters are completed. Add the chapter list, development status table, module outline mapping, companion files, known gaps, and AI use disclosure."
+
+**AI Response Summary:** Rewrote the README with updated version (V2.0), 12-chapter table, development status showing all chapters completed, mapping from the original 16 planning sections to the 12 final chapters, companion file list, and known gaps section.
+
+**Verification/Action Taken:** Confirmed the repository URL and GitHub usernames matched the actual repo, then committed the file.
+
+---
+
+#### Interaction 10: Formatting the Submission Report
+**Date:** November 7, 2026
+
+**Prompt Used:**
+> [Provided the submission report in plain text] "Format this as a printable document. Include a cover page, table of contents, section breaks, and professional styling."
+
+**AI Response Summary:** Produced an HTML document with a cover page, table of contents, ten numbered sections, styled tables, page breaks between sections, and print-safe colors for PDF export.
+
+**Verification/Action Taken:** Opened the HTML file in a browser, exported to PDF, and confirmed all sections rendered correctly before including in the ZIP package.
+
+---
+
+## General Declaration — Stage 2
+
+I confirm that AI during Stage 2 was used as a planning, formatting, and editorial assistant. All leadership decisions, task assignments, review judgments, and final content decisions were made by me. AI assistance was used for:
+
+- Verifying that a teammate's AI disclosure met the assignment's requirements
+- Drafting and revising the Stage 2 personal log
+- Structuring and writing the Stage 2 submission report
+- Updating the README to reflect the completed V2.0 state
+- Formatting the submission report for PDF export
+
+All AI-generated output was reviewed against the actual project events and edited before submission. No AI tool invented experiences, contributions, checks, or reflections on my behalf.
+
 ---
 
 ## General Declaration
